@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Galeria</title>
+</head>
+<body>
+    <!-- Inicia el header -->
+    <header>
+        <!-- Logo -->
+        <a href="index.html"><img src="images/logo.jpg" alt="logo de tienda mondongo"></a>
+        <!-- Inicio de barra de navegacion -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clientes.html">clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="galeria.html">galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Final de barra de navegacion -->
+    </header>
+    <!-- Termina el header -->
+    <h1 class="titulo-galeria">Galeria del mondongo:</h1>
+    <!-- El h1 no lo puse en las secciones porque es el titulo para ambas -->
+    <!-- Estas galerias serian sliders de imagenes, dividadas en dos para facilitar la visualizacion -->
+<main id="contenedor-galeria" class="container-fluid">
+    <section class="galeria-seccion">
+        <!-- Este delirio que hice en ambos carruseles es porque bootstrap solo habia para 1 sola imagen, asi que se me ocurrio meterle 3 divs en su lugar para poder cumplir con lo que tenia planeado en el wireframe, cuando descubra como hacer uno posta lo cambiaria -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="carousel-flex" class="galeria">
+                    <img src="https://www.elespectador.com/resizer/P8_LTlg6pboCcEeOVuDMTL0JswQ=/920x613/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/RSOLON6JNJFZXBUDTKQXNLPZNM.jpg" alt="imagen-mondongo" class="imagen-galeria">
+                    <img src="https://www.cocina-uruguaya.com/base/stock/Recipe/222-image/222-image_web.jpg" alt="imagen-mondongo" class="imagen-galeria">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/ZCallos_Primera.jpg" alt="imagen-mondongo" class="imagen-galeria">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="galeria">
+                    <img src="https://imag.bonviveur.com/mondongo.jpg" alt="imagen-mondongo" class="imagen-galeria">
+                    <img src="https://recetasdemipais.com/wp-content/uploads/2022/02/Receta-de-sopa-de-mondongo-hondureno-en-estados-unidos.jpg" alt="imagen-mondongo" class="imagen-galeria">
+                    <img src="https://d320djwtwnl5uo.cloudfront.net/recetas/cover_m14jcn8gsl_mondongo.jpg" alt="imagen-mondongo" class="imagen-galeria">
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">imagen-mondongo
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="galeria-seccion">
+        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="galeria">
+                    <img src="https://lasrecetasdelchef.net/wp-content/uploads/2020/05/mondongo.jpg" alt="imagen-mondongo" class="imagen-galeria">
+                    <img src="https://raffe.com.ar/wp-content/uploads/2019/06/Mondongo-Raffe.jpg" alt="imagen-mondongo" class="imagen-galeria">
+                    <img src="https://locosxlaparrilla.com/wp-content/uploads/2015/02/Receta-recetas-locos-x-la-parrilla-locosxlaparrilla-receta-mondongo-espa%C3%B1ola-mondongo-espa%C3%B1ola-mondongo-receta-mondongo.jpg" alt="imagen-mondongo" class="imagen-galeria">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="galeria">
+                    <img src="https://www.cronica.com.ar/__export/1648399384235/sites/cronica/img/2022/03/27/portada_mongongo_final_3_crop1648399366112.png_36558816.png" alt="imagen-mondongo" class="imagen-galeria">
+                    <img src="https://resizer.glanacion.com/resizer/j76EXCGyTm5iw5NNdkNhDhbN1Wc=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/YFH6CEIMTVBSTI5MXUMED3N7EA.jpg" alt="imagen-mondongo" class="imagen-galeria">
+                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/6UIFUQCTIRGQXBJEXKXRJ4WKXY.jpg" alt="imagen-mondongo" class="imagen-galeria">
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
+</main>
+    
+
+    <!-- Inicia el footer -->
+    
+        <footer>
+            <div class="container-fluid">
+                <div class="footer">
+                    <div class="copyright"><p>Copyright de tienda mondongo</p></div>
+                    <div class="newsletter-text">
+                        <p class="texto-visible">Se el primero en enterarse de nuestras proximas ofertas:</p>
+                        <!-- Esto es para que sea diferente el texto en la vista mobile o pc -->
+                        <p class="hidden-text">Enterate de las nuevas ofertas:</p>
+                        <!-- En este input pondrian el mail para recibir el newsletter -->
+                        <input> 
+                    </div>
+                    <div class="seguinos-container">
+                        <div>
+                            <p class="seguinos-titulo">Seguinos:</p>
+                            <div class="links-footer">
+                                <a href=""><img src="images/facebook.png" alt="logo facebook"></a>
+                                <a href=""><img src="images/instagram.png" alt="logo instagram"></a>
+                                <a href=""><img src="images/twitter.png" alt="logo twitter"></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    
+    <!-- Termina el footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
